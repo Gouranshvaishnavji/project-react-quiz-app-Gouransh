@@ -8,8 +8,16 @@
 h2{
   font-size: 20px;
   font-weight: 700;
-  color: #7676d6;
-  text-transform: uppercase;
+  color: #363638;
+  margin-bottom: 20px;
+  border: 1px 1px solid slategray;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+.question-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #363638;
   margin-bottom: 20px;
   border: 1px 1px solid slategray;
   padding: 5px 20px;

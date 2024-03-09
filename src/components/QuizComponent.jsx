@@ -114,12 +114,12 @@ export default class QuizComponent extends Component{
     return(
       <div className="quiz-container">
         <div className="quiz-question">
-          <h2>Question</h2>
+          <h2 className="question-title">Question</h2>
           <div className="question-info">
             <span>
               {this.state.currentQuestionIndex + 1} of {this.state.questions.length}
             </span>
-            <h5>{currentQuestion.question}</h5>
+            <h5 className="question-text">{currentQuestion.question}</h5>
           </div>
 
           <div className="options">
