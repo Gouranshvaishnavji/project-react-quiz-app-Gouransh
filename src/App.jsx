@@ -10,7 +10,7 @@ export default class App extends Component{
     return(
       <Routes>
         <Route path="/" element={<HomeComponent/>}></Route>
-        <Route path="/play-quiz" element={<QuizComponent/>}></Route>
+        <Route path="/quiz" element={<QuizComponent/>}></Route>
         <Route path="/finish-quiz" element={<ResultComponent/>}></Route>
       </Routes>
     );
