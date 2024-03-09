@@ -1,0 +1,23 @@
+
+.main{
+  text-align: center;
+  margin-top: 300px;
+
+}
+
+.main-heading{
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+
+.bt{
+  color: white;
+  font-weight: lighter;
+  background-color: rgb(7, 179, 7);
+  width: 200px;
+  height: 40px;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+}

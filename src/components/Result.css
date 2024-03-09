@@ -1,0 +1,56 @@
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.result-wrapper {
+  text-align: center;
+}
+
+.score-section {
+  background-color: #ffffff;
+  border-left: 2px solid #8686f3; 
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1vw 0.5rem rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+}
+
+.result-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 0rem;
+}
+
+.result-details {
+  text-align: left;
+}
+
+.result-score {
+  color: #2196f3; /* Blue */
+}
+
+.result-buttons {
+  text-align: center;
+}
+
+.result-play,
+.result-home {
+  border: 2px solid #7676d6; 
+  color: #7676d6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 2.5vw;
+}
+
+.result-play:hover,
+.result-home:hover {
+  background-color: #7676d6; 
+  color: #ffffff;
+}
