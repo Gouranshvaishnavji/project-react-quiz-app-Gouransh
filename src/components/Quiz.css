@@ -5,7 +5,16 @@
   align-items: center;
   height: 100vh;
 }
-
+h2{
+  font-size: 20px;
+  font-weight: 700;
+  color: #7676d6;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 1px 1px solid slategray;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
 .options-container {
   display: flex;
   flex-wrap: wrap;
