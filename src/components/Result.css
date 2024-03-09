@@ -44,10 +44,10 @@
   text-align: left;
 }
 .result-number {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #000;
-  line-height: 1.5rem;
+  color: #353333;
+  line-height: 1.3rem;
 }
 .result-score {
   color: #2196f3; /* Blue */
