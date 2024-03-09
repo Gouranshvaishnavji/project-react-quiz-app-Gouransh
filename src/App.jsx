@@ -1,21 +1,18 @@
-import HomeComponent from "./components/HomeComponent";
-import QuizComponent from "./components/QuizComponent";
+import { Component } from "react";
+import {Routes, Route } from "react-router-dom";
+import HomeComponent from "./components/HomeComponent"
+import QuizComponent from "./components/QuizComponent"
 import ResultComponent from "./components/ResultComponent";
-import { useRoutes, BrowserRouter as Router, Route } from "react-router-dom";
 
-function App() {
-  // I am using React Router userouter heree 
-  const routing = useRoutes([
-    { path: "/", element: <HomeComponent /> },
-    { path: "/play-quiz", element: <QuizComponent /> },
-    { path: "/finish-quiz", element: <ResultComponent /> },
-  ]);
 
-  return (
-    <Router>
-      {routing}
-    </Router>
-  );
+export default class App extends Component{
+  render(){
+    return(
+      <Routes>
+        <Route path="/" element={<HomeComponent/>}></Route>
+        <Route path="/play-quiz" element={<QuizComponent/>}></Route>
+        <Route path="/finish-quiz" element={<ResultComponent/>}></Route>
+      </Routes>
+    );
+  };
 }
-
-export default App;
