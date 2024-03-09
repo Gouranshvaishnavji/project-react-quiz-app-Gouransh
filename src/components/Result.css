@@ -41,7 +41,10 @@
 }
 
 .result-details {
-  text-align: left;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #24363d;
+  line-height: 1.3rem;
 }
 .result-number {
   font-size: 1.3rem;
