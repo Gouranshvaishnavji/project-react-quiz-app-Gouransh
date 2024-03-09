@@ -112,59 +112,61 @@ export default class QuizComponent extends Component{
     console.log(this.state.correctAnswers)
     const {currentQuestion} = this.state;
     return(
-<div className="quiz-question">
-  <h2>Question</h2>
+      <div className="quiz-container">
+        <div className="quiz-question">
+          <h2>Question</h2>
+          <div className="question-info">
+            <span>
+              {this.state.currentQuestionIndex + 1} of {this.state.questions.length}
+            </span>
+            <h5>{currentQuestion.question}</h5>
+          </div>
 
-  <div>
-    {/* updated this span */}
-    <span>
-      {this.state.currentQuestionIndex + 1} of {this.state.questions.length}
-    </span>
-    <h5>{currentQuestion.question}</h5>
-  </div>
+          <div className="options">
+            <div className="option-container">
+              <p onClick={this.handleOptionClick} className="option">
+                {currentQuestion.optionB}
+              </p>
+              <p onClick={this.handleOptionClick} className="option">
+                {currentQuestion.optionA}
+              </p>
+            </div>
+            <div className="option-container">
+              <p onClick={this.handleOptionClick} className="option">
+                {currentQuestion.optionC}
+              </p>
+              <p onClick={this.handleOptionClick} className="option">
+                {currentQuestion.optionD}
+              </p>
+            </div>
+          </div>
 
-  <div className="option-container">
-    <p onClick={this.handleOptionClick} className="option">
-      {currentQuestion.optionB}
-    </p>
-    <p onClick={this.handleOptionClick} className="option">
-      {currentQuestion.optionA}
-    </p>
-  </div>
+          <div className="button-container">
+            <button className="button previous" onClick={this.handlePrevButtonClick}>
+              Previous
+            </button>
+            <button className="button next" onClick={this.handleNextButtonClick}>
+              Next
+            </button>
+            <button className="button quit" onClick={this.handleQuitButtonClick}>
+              Quit
+            </button>
+            <Link
+              to="/finish-quiz"
+              state={{
+                answeredQuestions: this.state.numberofAnsweredQuestions,
+                score: this.state.score,
+                correctAnswer: this.state.correctAnswers,
+                totalQuestions: this.state.questions.length,
+                wrongAnswer: this.state.wrongAnswers,
+              }}
+            >
+              <button className="button finish">Finish</button>
+            </Link>
+          </div>
+        </div>
+      </div>
 
-  <div className="option-container">
-    <p onClick={this.handleOptionClick} className="option">
-      {currentQuestion.optionC}
-    </p>
-    <p onClick={this.handleOptionClick} className="option">
-      {currentQuestion.optionD}
-    </p>
-  </div>
-
-  <div className="button-container">
-    <button className="button previous" onClick={this.handlePrevButtonClick}>
-      Previous
-    </button>
-    <button className="button next" onClick={this.handleNextButtonClick}>
-      Next
-    </button>
-    <button className="button quit" onClick={this.handleQuitButtonClick}>
-      Quit
-    </button>
-    <Link
-      to="/finish-quiz"
-      state={{
-        answeredQuestions: this.state.numberofAnsweredQuestions,
-        score: this.state.score,
-        correctAnswer: this.state.correctAnswers,
-        totalQuestions: this.state.questions.length,
-        wrongAnswer: this.state.wrongAnswers,
-      }}
-    >
-      <button>Finish-</button>
-    </Link>
-  </div>
-</div>
 
     )
   }
