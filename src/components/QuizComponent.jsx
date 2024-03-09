@@ -66,12 +66,13 @@ export default class QuizComponent extends Component{
     }
   }
 
-  handleQuitButtonClick = ()=>{
-    
-    if(window.confirm("Are you sure you want to quit? Don't leave without trying!")){
-      window.location.reload(false)
+  handleQuitButtonClick = () => {
+    if (window.confirm("Are you sure you want to quit? Don't leave without trying!")) {
+      // Replace "/home" with the path you want to navigate to
+      window.location.href = "/";
     }
   }
+  
   handleOptionClick =(e)=>{
     if(e.target.innerHTML.toLowerCase() === this.state.answer.toLowerCase()){
       this.correctAnswer();
