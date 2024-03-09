@@ -29,7 +29,7 @@ export default function ResultComponent() {
           </div>
         </div>
         <div className="result-buttons">
-          <Link to="/play-quiz">
+          <Link to="/quiz">
             <button className="result-play">Play Again</button>
           </Link>
           <Link to="/">
